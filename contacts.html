@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <title>Notari Filippo Contacts</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleForm.css">
+    <link rel="stylesheet" href="style/styleNav.css">
+    <script src="script/script.js"></script>
+  </head>
+  <body>
+            
+    <header>
+      <br>
+      <img src="img/logo.png" id="logo" alt="logo">
+    </header>
+      <span  onclick="openNav()" id="buttonMenu">&#9776;</span>
+
+         
+
+    <div id="menu" class="sidenav">
+      <ul>
+        <li>  <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a></li>
+        <li><a  href="index.html">Home</a></li>
+        <li><a  href="videoclip.html">Videclip</a></li>
+        <li><a href="#ShortFilm">ShortFilms</a></li>
+        <li><a class="active" href="contacts.html">Contact</a></li>
+      </ul>
+    </div>  
+    <div class="content">
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-0de64e59-1fd6-408f-b697-2ce75ee26616"></div>
+      
+        <form name="contact" method="POST" data-netlify="true">
+    <p>
+      <label>Nome: <input type="text" name="name" /></label>   
+    </p>
+    <p>
+      <label>Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>Messaggio: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <button type="submit">Invia</button>
+    </p>
+  </form>
+
+    </div>
+    </body>
+</html>
