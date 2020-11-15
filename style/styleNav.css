@@ -1,0 +1,98 @@
+@media screen and (max-width: 1359px) {
+    #buttonMenu{
+        display:block;
+        position:fixed;
+        top: 50%;
+        font-size: 100px;
+        cursor:pointer;
+    }
+    .sidenav {
+        float:none;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 100px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+    }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 150px;
+        margin-left: 50px;
+    }
+  }
+
+  
+  @media screen and (min-width: 1360px) {
+    #buttonMenu{
+        display:none;
+    }
+    .closebtn{
+        display:none;
+    }
+    ul{
+        position: absolute;
+        list-style: none;
+        width: auto;
+        margin:0 auto;
+        padding-top:10%;
+        top : 15%;
+        margin-top: 4%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+    li{
+        float: left;
+    }
+    li a {
+        color: white;
+        font-weight: bold;
+        display:block;
+        line-height: 60px;
+        margin:20px;
+        height: 50px;
+        width: auto;
+        font-size: 55px;
+        text-align: center;
+        text-decoration: none;
+    }
+    li a:hover,  li a.active {
+        background:white;
+        color:black;
+        opacity: 0.5;
+        border-radius: 5px;
+    }
+
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+    .sticky + .content {
+    padding-top: 20%;
+    }
+
+}
