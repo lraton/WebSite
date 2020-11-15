@@ -9,7 +9,7 @@ input[type=text],[type=email], select, textarea {
     resize: vertical;
   }
   
-  input[type=submit] {
+  button {
     background-color: #293133;
     color: white;
     padding: 12px 20px;
@@ -18,6 +18,6 @@ input[type=text],[type=email], select, textarea {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+  button:hover {
     background-color: #293133;
   }
