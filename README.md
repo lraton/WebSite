@@ -2,4 +2,4 @@
 Sito web di Filippo Notari
 
 ![alt text](https://github.com/lraton/SitoWeb/blob/master/img/logo.png?raw=true)
-My personal website
+My simply and static personal website
