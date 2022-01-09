@@ -1,37 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Vujahday+Script&display=swap');
 body{
-  background-image: url("../img/sfondo.jpg");
-  font-family: "Lucida Console", Courier, monospace;
-  background-attachment:fixed;
-  background-size: cover;
+  background-color: #151019;
+  background-image: url("../img/prova.png");
+  font-family: 'Vujahday Script', cursive;
+  font-weight: bold;
+  background-attachment:scroll;
+  background-repeat: repeat-x;
   color:white;
 }
-header{
-  position:absolute;
-  top: 40%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  
+div{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: auto;
 }
-#logo {
-  position:absolute;
-  top: 10%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  height: 250px ;
-  width: 250px;
-  z-index:-1;
+img {
+    width: 100%;
+    height: 100%;
+    margin-top:10%;
+    margin-bottom: %;
+    background-color: transparent;
 }
-
-#scritta{
-  position:absolute;
-  top: 10%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
+.container {
+  display: block;
+}
+.profile{
+  width: 100%;
+}
+#avatar{
+  border-radius:50%;
+  height:20%;
+  width: 20%;
+  float:left;
+  text-align: left;
+}
+.textprofile{
   height: auto;
+  float: left;
+  text-align: left;
+  font-size: 50px;
+  padding:5%;
+}
+.content{
+    border:0;
+    float: right;
+    margin-right: 20%;
+    left: 50%;
+    height: 450px;
+    overflow:scroll;
+}
+.video{
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 450px;
+
+}
+.videotext{
+  text-align: left;
+  font-size: 50px;
+  margin-top: 100px;;
+}
+.contacts{
+  width: 100%;
+  height: 450px;
 }
 footer{
   grid-area: footer;
