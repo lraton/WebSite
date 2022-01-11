@@ -114,6 +114,7 @@ img {
 }
 footer {
   grid-area: footer;
+  text-align: center;
 }
 .field {
   display: flex;
@@ -151,7 +152,8 @@ footer {
   position: relative;
   animation: down 1.5s infinite;
   -webkit-animation: down 1.5s infinite;
-  &::before {
+}
+.scroll::before {
     content: "";
     position: absolute;
     top: 15px;
@@ -162,4 +164,3 @@ footer {
     border-bottom: 2px solid #ffffff;
     transform: rotate(-45deg);
   }
-}
