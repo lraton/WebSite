@@ -118,7 +118,6 @@ footer {
 }
 .field {
   display: flex;
-  align-items: center;
   justify-content: space-around;
   width: 300px;
 }
@@ -149,13 +148,15 @@ footer {
   height: 60px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  position: relative;
+  position: fixed;
+  z-index:999;
+  bottom:2%;
   animation: down 1.5s infinite;
   -webkit-animation: down 1.5s infinite;
 }
 .scroll::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 15px;
     left: 18px;
     width: 18px;
@@ -163,4 +164,22 @@ footer {
     border-left: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
     transform: rotate(-45deg);
+  }
+::-webkit-scrollbar-track
+  {
+  	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  	background-color: #151019;
+  	border-radius: 10px;
+  }
+
+::-webkit-scrollbar
+  {
+  	width: 10px;
+  	background-color: #151019;
+  }
+
+::-webkit-scrollbar-thumb
+  {
+  	border-radius: 10px;
+  	background-image: -webkit-gradient(linear,left bottom, left top,color-stop(0.44, rgba(2,0,36,1)),color-stop(0.72, rgba(18,49,64,1)),color-stop(0.86,rgba(0,212,255,1)));
   }
