@@ -67,6 +67,10 @@ img {
   height: 450px;
   overflow: scroll;
 }
+.youtubevideo{
+  width:560px;
+  height:315px;
+}
 .videotext {
   text-align: left;
   font-size: 50px;
