@@ -70,7 +70,7 @@
       </div>
       <div class="sezioni contacts reveal">
         Contattami:
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
           <p>
             <label>Nome: <input type="text" name="name" /></label>
           </p>
@@ -83,6 +83,7 @@
             <textarea name="message"></textarea>
             </label>
           </p>
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit">Invia</button>
         </form>
       </div>
