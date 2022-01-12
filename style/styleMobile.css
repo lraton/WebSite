@@ -8,6 +8,14 @@
   	margin: 1px;
   	opacity: .5;
   }
+  .sezioni {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .reveal {
+    position: relative;
+    opacity: 1;
+  }
   .video {
     background-color: white;
     height: 750px;
@@ -18,6 +26,12 @@
     margin-right: 5%;
     height: 750px;
     overflow: scroll;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11),
+            0 2px 2px rgba(0,0,0,0.11),
+            0 4px 4px rgba(0,0,0,0.11),
+            0 8px 8px rgba(0,0,0,0.11),
+            0 16px 16px rgba(0,0,0,0.11),
+            0 32px 32px rgba(0,0,0,0.11);
   }
   .youtubevideo{
     width:500px;

@@ -6,10 +6,11 @@ function reveal( ) {
     var elementTop = reveals[i].getBoundingClientRect().top;
     var elementVisible = 150;
     if(mediaQuery.matches) {
-      reveals[i].classList.add("active");
+      console.log(mediaQuery);
     }else{
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
+        console.log(mediaQuery);
       } else {
         reveals[i].classList.remove("active");
       }
