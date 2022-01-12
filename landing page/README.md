@@ -1,1 +1,0 @@
-personal landing-template
