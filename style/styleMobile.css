@@ -8,9 +8,25 @@
   	margin: 1px;
   	opacity: .5;
   }
-
+  .video {
+    background-color: white;
+    height: 750px;
+  }
+  .youtube {
+    border: 0;
+    float: right;
+    margin-right: 5%;
+    height: 750px;
+    overflow: scroll;
+  }
   .youtubevideo{
     width:500px;
     height:281px;
+  }
+  .videotext {
+    text-align: left;
+    font-size: 60px;
+    margin-top: 250px;
+    margin-left: 5%;
   }
 }
