@@ -60,7 +60,7 @@ img {
   padding: 5%;
 }
 .video {
-  background-color: white;
+  background-image: url("../img/backgroundDiv.jpg");
 }
 .youtube {
   border: 0;
@@ -70,8 +70,8 @@ img {
   overflow: scroll;
 }
 .youtubevideo{
-  width:560px;
-  height:315px;
+  width:760px;
+  height:427px;
 }
 .videotext {
   text-align: left;
