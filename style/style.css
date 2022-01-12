@@ -85,10 +85,6 @@ img {
   font-size: 50px;
   text-align: center;
 }
-.discord {
-  background-color: white;
-  border-radius: 15px;
-}
 .reveal {
   position: relative;
   transform: translateY(150px);
