@@ -95,9 +95,6 @@ img {
   transform: translateY(0);
   opacity: 1;
 }
-i{
-  color: white;
-}
 .social-nav {
   position: fixed;
   top: 0px;
