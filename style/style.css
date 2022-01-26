@@ -1,45 +1,192 @@
-body{
-    background-image: url("../img/sfondo.png");
-    font-family: "Lucida Console", Courier, monospace;
-    background-attachment:fixed;
-    background-size: cover;
-    color:white;
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Vujahday+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100&family=Vujahday+Script&display=swap');
+body {
+  background-color: #151019;
+  background-image: url("../img/background.png");
+  font-family: "Vujahday Script", cursive;
+  font-weight: bold;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: white;
 }
-header{
-    position:absolute;
-    top: 4%;
-    left: 50%;
-    margin-right: -40%;
-    transform: translate(-50%, -50%);
+div {
+  vertical-align: top;
+  display: inline-block;
+  width: auto;
 }
-#buttonMenu{
-    font-size:100px;
+img {
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-color: transparent;
 }
-img{
-    width: 90%;
-    height: auto;
+.container {
+  display: block;
 }
-iframe{
-    border:0;
-    position:relative;
-    margin-top: 10%;
-    left: 50%;
-    margin-right: -40%;
-    transform: translate(-50%, -50%);
-    z-index:0;
+.containerScroll {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.content {
-    padding: 20%;
-    padding-top:30%;
+.sezioni {
+  color: black;
+  width: 100%;
+  height: 450px;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-#menu{
-    z-index:1;
+#avatar {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  float: left;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
-footer{
-    position:relative; 
-    bottom:0;
-    width:100%; 
-    height:100px; 
-    background-color: #293133;
-    text-align: center;
+.textprofile {
+  color: white;
+  height: auto;
+  float: left;
+  text-align: left;
+  font-size: 50px;
+  padding: 5%;
 }
+.video {
+  background-image: url("../img/backgroundDiv.jpg");
+}
+.youtube {
+  border: 0;
+  float: right;
+  margin-right: 5%;
+  height: 450px;
+  overflow: scroll;
+}
+.youtubevideo{
+  width:760px;
+  height:427px;
+}
+.videotext {
+  text-align: left;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-left: 5%;
+}
+.contacts {
+  color: white;
+  height: 850px;
+  font-size: 50px;
+  text-align: center;
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+i{
+  color: white;
+}
+.social-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.social-nav ul {
+  margin: 0;
+  padding: 0;
+}
+.social-nav ul li {
+  list-style: none;
+  display: block;
+  float: right;
+  background: #393939;
+  padding: 100px 50px 5px 50px;
+  margin: 1px;
+  opacity: 0.5;
+}
+.social-nav ul li:hover {
+  opacity: 1;
+}
+footer {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.field {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+.scroll {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: fixed;
+  z-index:999;
+  bottom:2%;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+}
+.scroll::before {
+    content: "";
+    position: fixed;
+    top: 15px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(-45deg);
+  }
+::-webkit-scrollbar-track
+  {
+  	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  	background-color: #151019;
+  	border-radius: 10px;
+  }
+
+::-webkit-scrollbar
+  {
+  	width: 10px;
+  	background-color: #151019;
+  }
+
+::-webkit-scrollbar-thumb
+  {
+  	border-radius: 10px;
+  	background-image: -webkit-gradient(linear,left bottom, left top,color-stop(0.44, rgba(2,0,36,1)),color-stop(0.72, rgba(18,49,64,1)),color-stop(0.86,rgba(0,212,255,1)));
+  }

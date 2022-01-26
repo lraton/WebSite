@@ -1,24 +1,20 @@
-function openNav() {
-  document.getElementById("menu").style.width = "680px";
-  document.getElementById('closebtn').style.display='block';
-}
-
-function closeNav() {
-  document.getElementById("menu").style.width = "0";
-}
-
-
-function stikynav(){
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("menu");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+function reveal( ) {
+  var reveals = document.querySelectorAll(".reveal");
+  const mediaQuery = window.matchMedia('(max-width: 1300px)');
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if(mediaQuery.matches) {
+      console.log(mediaQuery);
+    }else{
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+        console.log(mediaQuery);
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
   }
 }
-}
+window.addEventListener("scroll", reveal);

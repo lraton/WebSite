@@ -1,42 +1,115 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-    <meta charset="utf-8">
-    <title>Notari Filippo</title>
-    <link rel="stylesheet" href="style/styleIndex.css">
-    <link rel="stylesheet" href="style/styleNavIndex.css">
+    <meta charset="utf-8" />
+    <title>Filippo Notari</title>
+    <meta name="description" content="Qui puoi trovare tutto lo schifo che creo ;)" />
+    <meta name="keywords" content="HTML,CSS,c,JavaScript,c#,videoclip,filipponotari,notari,filippo,notarifilippo" />
+    <meta name="author" content="Filippo Notari" />
+    <link rel="icon" type="image/x-icon" href="/favicon-32x32.ico" />
+    <meta name="theme-color" content="#333333" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/styleForm.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="style/styleMobile.css" />
     <script src="script/script.js"></script>
-    <style>#iubenda-cs-banner{top:0!important;left:0!important;position:fixed!important;width:100%!important;z-index:99999998!important;background:#000;background:rgba(0,0,0,.85)}.iubenda-cs-content{display:block;margin:0 auto;padding:10px 50px 10px 20px;width:auto;font-family:Helvetica,Arial,FreeSans,sans-serif;font-size:12px;color:#fff!important}.iubenda-cs-rationale{max-width:900px;position:relative;margin:0 auto}.iubenda-banner-content>p{font-family:Helvetica,Arial,FreeSans,sans-serif;line-height:1.5}.iubenda-cs-close-btn{color:#fff!important;text-decoration:none;font-size:12px;position:absolute;top:-5px;right:-20px;border:1px solid #fff!important;display:inline-block;width:20px;height:20px;line-height:20px;text-align:center;border-radius:10px}.iubenda-cs-cookie-policy-lnk{text-decoration:underline;color:#fff!important;font-size:12px;font-weight:900}</style>
   </head>
   <body>
-        <div>
-
-          <header>
-            <img src="img/logo2020.png" id="logo" alt="logo">
-          </header>
-          
-          <img src="img/logo.png" id="scritta" alt="logo">
-          
-          <script >
-            var typed = new Typed('.element', {
-              strings: ["First sentence.", "Second sentence."],
-              typeSpeed: 30
-            });
-
-        </script>
-
-          <span  onclick="openNav()" id="buttonMenu">&#9776;</span>
-
-          <div id="menu" class="sidenav">
-            <ul>
-              <li>  <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a></li>
-              <li><a class="active" href="#home">Home</a></li>
-              <li><a href="videoclip.html">Videclip</a></li>
-              <li><a href="#contact">ShortFilms</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-              </ul>
-          </div>       
-
+    <nav class="social-nav">
+      <ul>
+        <li>
+          <a href="https://blog.filipponotari.net/"><i class="fas fa-blog fa-2x">log</i>
+        </li>
+        <li>
+          <a href="https://t.me/Iraton"><i class="fab fa-telegram fa-2x"></i>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/iraton.raw_ztl"><i class="fab fa-instagram fa-2x"></i>
+        </li>
+        <li>
+          <a href="https://bit.ly/3thZxOV"><i class="fab fa-youtube-square fa-2x"></i>
+        </li>
+        <li>
+          <a href="https://github.com/lraton"><i class="fab fa-github fa-2x"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <img src="img/logo.png" id="scritta" alt="logo" />
+    </header>
+    <div class="container">
+      <div class="containerScroll">
+        <div class="field">
+          <div class="scroll"></div>
         </div>
+      </div>
+      <div class="sezioni profilo">
+        <img src="img/profile.png" id="avatar" alt="avatar" />
+        <div class="textprofile">
+        <h1>Chi sono?</h1>
+          <p>
+            Non so cosa dirti, quindi scorri in basso
+          </p>
+        </div>
+      </div>
+      <div class="sezioni video reveal">
+        <div class="videotext">
+          Qui puoi trovare <br />
+          alcuni dei miei<br />
+          videoclip: <br />
+        </div>
+        <div class="youtube">
+          <iframe class="youtubevideo" src="https://www.youtube.com/embed/p5a34oOheAc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br />
+          <iframe class="youtubevideo" src="https://www.youtube.com/embed/RDXMa-kGVzI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br />
+          <iframe class="youtubevideo" src="https://www.youtube.com/embed/124AvDMcGeQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br />
+          <iframe class="youtubevideo" src="https://www.youtube.com/embed/Why4tdy1Z0o" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br />
+          <iframe class="youtubevideo" src="https://www.youtube.com/embed/51GHkFRGhMQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br />
+          <iframe class="youtubevideo" src="https://www.youtube.com/embed/4bV3P1AGBB8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br />
+          <iframe class="youtubevideo" src="https://www.youtube.com/embed/0_fXuNtbWAQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="sezioni contacts reveal">
+        Contattami:
+        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+          <p>
+            <label>Nome: <input type="text" name="name" placeholder="Mario Rossi" required/></label>
+          </p>
+          <p>
+            <label>Email: <input type="email" name="email" placeholder="emai@domain.it"required/></label>
+          </p>
+          <p>
+            <label>
+            Messaggio:<br/>
+            <textarea name="message" placeholder="Scrivimi quello che vuoi" required></textarea>
+            </label>
+          </p>
+          <div data-netlify-recaptcha="true" required ></div><br/>
+          <button type="submit">Invia</button>
+        </form>
+      </div>
+      <div class="sezioni discord reveal">
+        <iframe
+          src="https://discord.com/widget?id=578633929062481939&theme=dark"
+          width="100%"
+          height="450"
+          border-radius="15px"
+          allowtransparency="true"
+          frameborder="0"
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+          ></iframe>
+      </div>
+      <footer>
+        <div>
+          <a> © 2022 Copyright:</a>
+          <a href="https://filipponotari.net/"> filipponotari.net</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
