@@ -19,6 +19,7 @@
   .video {
     background-color: white;
     height: 750px;
+    margin-top: 0px;
   }
   .youtube {
     border: 0;
@@ -32,6 +33,17 @@
             0 8px 8px rgba(0,0,0,0.11),
             0 16px 16px rgba(0,0,0,0.11),
             0 32px 32px rgba(0,0,0,0.11);
+  }
+  #avatar{
+    height: 300px;
+    width: 300px;
+  }
+  .profilo{
+    margin-bottom: 30px;
+  }
+  .textprofile{
+    font-size: 30px;
+    margin:0px;
   }
   .youtubevideo{
     width:500px;
