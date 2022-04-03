@@ -1,115 +1,90 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="utf-8" />
-    <title>Filippo Notari</title>
-    <meta name="description" content="Qui puoi trovare tutto lo schifo che creo ;)" />
-    <meta name="keywords" content="HTML,CSS,c,JavaScript,c#,videoclip,filipponotari,notari,filippo,notarifilippo" />
-    <meta name="author" content="Filippo Notari" />
-    <link rel="icon" type="image/x-icon" href="/favicon-32x32.ico" />
-    <meta name="theme-color" content="#333333" />
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/styleForm.css" />
-    <link rel="stylesheet" href="fontawesome/css/all.css" />
-    <link rel="stylesheet" href="style/styleMobile.css" />
-    <script src="script/script.js"></script>
-  </head>
-  <body>
-    <nav class="social-nav">
-      <ul>
-        <li>
-          <a href="https://blog.filipponotari.net/"><i class="fas fa-blog fa-2x">log</i>
-        </li>
-        <li>
-          <a href="https://t.me/Iraton"><i class="fab fa-telegram fa-2x"></i>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/iraton.raw_ztl"><i class="fab fa-instagram fa-2x"></i>
-        </li>
-        <li>
-          <a href="https://bit.ly/3thZxOV"><i class="fab fa-youtube-square fa-2x"></i>
-        </li>
-        <li>
-          <a href="https://github.com/lraton"><i class="fab fa-github fa-2x"></i></a>
-        </li>
-      </ul>
-    </nav>
-    <header>
-      <img src="img/logo.png" id="scritta" alt="logo" />
-    </header>
-    <div class="container">
-      <div class="containerScroll">
-        <div class="field">
-          <div class="scroll"></div>
-        </div>
+
+<head>
+  <meta charset="utf-8" />
+  <title>AppLab</title>
+  <meta name="description" content="AppLab WebSite" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" type="image/x-icon" href="img/logo.ico" />
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="script/script.js"></script>
+</head>
+
+<body>
+  <div class="topnav">
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="tutorial.html">Tutorial</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="chisiamo.html">Chi siamo</a></li>
+      <img class="topnavimg" src="img/logo.png" alt="logo" />
+    </ul>
+  </div>
+
+  <div class="container container-grid">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/dmi.png" alt="DMI" class="immagini-slideshow" />
+        <div class="text">Il dipartimento</div>
       </div>
-      <div class="sezioni profilo">
-        <img src="img/profile.png" id="avatar" alt="avatar" />
-        <div class="textprofile">
-        <h1>Chi sono?</h1>
-          <p>
-            Non so cosa dirti, quindi scorri in basso
-          </p>
-        </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/gruppo.jpg" alt="gruppo" class="immagini-slideshow" />
+        <div class="text">Persone che non conosco</div>
       </div>
-      <div class="sezioni video reveal">
-        <div class="videotext">
-          Qui puoi trovare <br />
-          alcuni dei miei<br />
-          videoclip: <br />
-        </div>
-        <div class="youtube">
-          <iframe class="youtubevideo" src="https://www.youtube.com/embed/p5a34oOheAc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br />
-          <iframe class="youtubevideo" src="https://www.youtube.com/embed/RDXMa-kGVzI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br />
-          <iframe class="youtubevideo" src="https://www.youtube.com/embed/124AvDMcGeQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br />
-          <iframe class="youtubevideo" src="https://www.youtube.com/embed/Why4tdy1Z0o" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br />
-          <iframe class="youtubevideo" src="https://www.youtube.com/embed/51GHkFRGhMQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br />
-          <iframe class="youtubevideo" src="https://www.youtube.com/embed/4bV3P1AGBB8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br />
-          <iframe class="youtubevideo" src="https://www.youtube.com/embed/0_fXuNtbWAQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/gruppo1.jpg" alt="gruppo1" class="immagini-slideshow" />
+        <div class="text">Altre persone che non conosco</div>
       </div>
-      <div class="sezioni contacts reveal">
-        Contattami:
-        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-          <p>
-            <label>Nome: <input type="text" name="name" placeholder="Mario Rossi" required/></label>
-          </p>
-          <p>
-            <label>Email: <input type="email" name="email" placeholder="emai@domain.it"required/></label>
-          </p>
-          <p>
-            <label>
-            Messaggio:<br/>
-            <textarea name="message" placeholder="Scrivimi quello che vuoi" required></textarea>
-            </label>
-          </p>
-          <div data-netlify-recaptcha="true" required ></div><br/>
-          <button type="submit">Invia</button>
-        </form>
-      </div>
-      <div class="sezioni discord reveal">
-        <iframe
-          src="https://discord.com/widget?id=578633929062481939&theme=dark"
-          width="100%"
-          height="450"
-          border-radius="15px"
-          allowtransparency="true"
-          frameborder="0"
-          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-          ></iframe>
-      </div>
-      <footer>
-        <div>
-          <a> © 2022 Copyright:</a>
-          <a href="https://filipponotari.net/"> filipponotari.net</a>
-        </div>
-      </footer>
     </div>
-  </body>
+    <br />
+    <div class="dots" style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+    </script>
+
+    <h2>Calendario attività</h2>
+    <!--<iframe
+        src="https://calendar.google.com/calendar/embed?src=it.italian%23holiday%40group.v.calendar.google.com&ctz=Europe%2FRome"
+      ></iframe>-->
+  </div>
+  <footer>
+    <table class="tablefooter">
+      <tr>
+        <td class="footersinistra">
+          <h2>Contattaci</h2>
+          <p>Scrivici un'email</p>
+        </td>
+        <td>
+          <div class="forms">
+            <form action="/index.php">
+              <!--<label for="nome">Nome</label>-->
+              <input type="text" id="nome" name="nome" placeholder="Il tuo nome.." />
+              <!--<label for="email">Email</label>-->
+              <input type="text" id="email" name="email" placeholder="La tua email.." />
+              <!--<label for="oggetto">Oggetto</label>-->
+              <textarea id="oggetto" name="oggetto" placeholder="Scrivi qualcosa.." style="height: 200px"></textarea>
+              <input type="submit" value="invia" />
+            </form>
+          </div>
+        </td>
+        <!--<td class="footerdestra">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=it.italian%23holiday%40group.v.calendar.google.com&ctz=Europe%2FRome"></iframe>
+        </td>-->
+      </tr>
+    </table>
+  </footer>
+</body>
+
 </html>

@@ -1,20 +1,25 @@
-function reveal( ) {
-  var reveals = document.querySelectorAll(".reveal");
-  const mediaQuery = window.matchMedia('(max-width: 1300px)');
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-    if(mediaQuery.matches) {
-      console.log(mediaQuery);
-    }else{
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-        console.log(mediaQuery);
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
+
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
 }
-window.addEventListener("scroll", reveal);
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
