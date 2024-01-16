@@ -4,9 +4,12 @@
   	display:block;
   	float: right;
   	background: #393939;
-  	padding:50px 50px 5px 50px;
-  	margin: 1px;
+  	padding:50px 0 50px 0;
   	opacity: .5;
+  }
+  .fab{
+    width: calc(100vw/6);
+    text-align: center;
   }
   .sezioni {
     margin-top: 70px;
