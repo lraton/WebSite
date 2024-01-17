@@ -146,6 +146,12 @@ a{
     font-size: 25px;
     color: white;
 }
+.section {
+    color:#3b78ff;
+    font-size: 25px;
+    
+}
+
 /*menu*/
 .menu {
     text-align: center;
@@ -170,10 +176,6 @@ a{
 
 .projects h2 {
     text-align: center;
-}
-
-.projectscard {
-    color: #3b78ff;
 }
 
 .projectscard h3 {
@@ -202,30 +204,31 @@ a{
     color: white;
 }
 
-a:link {
-    color: white;
-}
 
 /* BEGIN: Media Query for Phone */
 @media only screen and (max-width: 1080px) {
     body{
-        font-size: 35px;
+        font-size: 45px;
     }
     .welcome{
-        font-size: 35px;
+        font-size: 45px;
     }
     .terminal p{
         font-size: 35px;
         animation-duration: 1000ms;
     }
     .menu{
-        font-size: 35px;
+        font-size: 45px;
     }
     .contact{
-        font-size: 35px;
+        font-size: 45px;
     }
     .command{
-        font-size: 30px;
+        font-size: 40px;
+    }
+    .section {
+        color:#3b78ff;
+        font-size: 45px;
     }
 }
 /* END: Media Query for Phone */
