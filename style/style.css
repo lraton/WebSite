@@ -9,7 +9,7 @@ body {
     background-color: black;
     color: green;
     font-size: 25px;
-    margin:0;
+    margin:5;
     list-style: none;
 }
 
@@ -34,7 +34,7 @@ a{
     display: block;
     width: 0px;
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 25px;
     color: green;
     overflow: hidden;
     white-space: nowrap;
@@ -179,7 +179,6 @@ a{
 /*video*/
 .video {
     text-align: center;
-    font-size: 25px;
 }
 .youtube {
     width: 33%;
@@ -202,3 +201,23 @@ a{
 a:link {
     color: white;
 }
+
+/* BEGIN: Media Query for Phone */
+@media only screen and (max-width: 1080px) {
+    body{
+        font-size: 35px;
+    }
+    .terminal p{
+        font-size: 35px;
+    }
+    .menu{
+        font-size: 35px;
+    }
+    .contact{
+        font-size: 35px;
+    }
+    .command{
+        font-size: 30px;
+    }
+}
+/* END: Media Query for Phone */
