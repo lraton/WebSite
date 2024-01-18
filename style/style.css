@@ -154,14 +154,12 @@ a{
 
 /*menu*/
 .menu {
-    text-align: center;
     font-size: 25px;
     z-index: 1;
 }
 
 /*projects*/
 .github{
-    text-align: center;
     width: 600px;
     border: 0;
     border-radius: 15px;
@@ -174,18 +172,11 @@ a{
     z-index: 1;
 }
 
-.projects h2 {
-    text-align: center;
-}
-
 .projectscard h3 {
     line-height: 0.5;
 }
 
 /*video*/
-.video {
-    text-align: center;
-}
 .youtube {
     width: 33%;
     border-radius: 30px;
@@ -194,7 +185,6 @@ a{
 
 /*contact*/
 .contact {
-    text-align: center;
     font-size: 25px;
 }
 
@@ -204,31 +194,37 @@ a{
     color: white;
 }
 
+a:link {
+    color: #3b78ff;
+}
+a:visited {
+    color: #3b78ff;
+}
 
 /* BEGIN: Media Query for Phone */
 @media only screen and (max-width: 1080px) {
     body{
-        font-size: 45px;
+        font-size: 55px;
     }
     .welcome{
-        font-size: 45px;
+        font-size: 55px;
     }
     .terminal p{
         font-size: 35px;
         animation-duration: 1000ms;
     }
     .menu{
-        font-size: 45px;
+        font-size: 55px;
     }
     .contact{
-        font-size: 45px;
+        font-size: 55px;
     }
     .command{
-        font-size: 40px;
+        font-size: 50px;
     }
     .section {
         color:#3b78ff;
-        font-size: 45px;
+        font-size: 55px;
     }
 }
 /* END: Media Query for Phone */
