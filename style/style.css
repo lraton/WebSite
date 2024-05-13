@@ -6,9 +6,10 @@
 body {
     font-family: "Cascadia Code", monospace;
     text-align: left;
-    background-color: black;
-    color: green;
-    font-size: 25px;
+    background-color: #1B1D1E;
+    color: #23E298;
+    font-size: 4vmin;
+    line-height: 4.1vmin;
     margin:5;
     list-style: none;
 }
@@ -34,8 +35,7 @@ a{
     display: block;
     width: 0px;
     margin: 0;
-    font-size: 25px;
-    color: green;
+    color: #23E298;
     overflow: hidden;
     white-space: nowrap;
     animation-name: writeText;
@@ -113,7 +113,7 @@ a{
 #loaded {
     height: 2px;
     width: 0px;
-    background-color: green;
+    background-color: #23E298;
     animation-name: load;
     animation-duration: 3000ms;
     animation-fill-mode: forwards;
@@ -143,18 +143,12 @@ a{
 }
 .welcome{
     text-align: left;
-    font-size: 25px;
-    color: white;
-}
-.section {
-    color:#3b78ff;
-    font-size: 25px;
-    
+    color: #BBBBBB;
 }
 
 /*menu*/
 .menu {
-    font-size: 25px;
+    color: #BBBBBB;
     z-index: 1;
 }
 
@@ -162,68 +156,41 @@ a{
 .github{
     width: 600px;
     border: 0;
-    border-radius: 15px;
     display:block;
 }
 .projects {
     text-align: left;
-    font-size: 25px;
     z-index: 1;
 }
 
-.projectscard h3 {
-    line-height: 0.5;
-}
-
-/*video*/
-.youtube {
-    width: 33%;
-    border-radius: 30px;
-    padding: 30px;
-}
-
-/*contact*/
-.contact {
-    font-size: 25px;
+.section{
+    color:#BBBBBB;
 }
 
 /*command*/
 .command {
-    font-size: 20px;
-    color: white;
+    color: #BBBBBB;
+}
+
+#user{
+    color: #23E298;
+}
+#dir{
+    color: #D08010;
 }
 
 a:link {
-    color: #3b78ff;
+    color: #BBBBBB;
 }
 a:visited {
-    color: #3b78ff;
+    color: #BBBBBB;
 }
 
 /* BEGIN: Media Query for Phone */
-@media only screen and (max-width: 1080px) {
-    body{
-        font-size: 55px;
-    }
-    .welcome{
-        font-size: 55px;
-    }
-    .terminal p{
-        font-size: 35px;
-        animation-duration: 1000ms;
-    }
-    .menu{
-        font-size: 55px;
-    }
-    .contact{
-        font-size: 55px;
-    }
-    .command{
-        font-size: 50px;
-    }
-    .section {
-        color:#3b78ff;
-        font-size: 55px;
-    }
+@media only screen and (min-width: 768px) {
+    body {
+      font-size: 2.5vmin;
+      line-height: 2.6vmin; }
+    #content {
+      min-width: 60vmin; } 
 }
-/* END: Media Query for Phone */

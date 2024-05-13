@@ -20,9 +20,10 @@
        \:::\____\                \::/____/                                            \:::\____\                                                \:::\____\               \::::/    /               \::/____/        
         \::/    /                 ~~                                                   \::/    /                                                 \::/    /                \::/____/                 ~~              
          \/____/                                                                        \/____/                                                   \/____/                  ~~                                       
--->       
+-->
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="utf-8" />
     <title>Filippo Notari</title>
@@ -49,7 +50,15 @@
 
     <div class="page">
         <p class="welcome"> Welcome to Arch Linux 6.6.8-arch1-1 (tty1)</p>
-        <p>Iraton@filipponotari.net:~$ <a class="command">cat menu</a></p>
+        <p>
+            <span id="user">Iraton@filipponotari.net</span><span class="command">:</span><span id="dir">~/</span><span
+                class="command">$ </span><a class="command">cd Documents</a>
+        </p>
+        <p>
+            <span id="user">Iraton@filipponotari.net</span><span class="command">:</span><span id="dir">~/Documents</span><span
+                class="command">$ </span><a class="command">tree ./menu/</a>
+        </p>
+        <span id="dir">./menu/</span>
         <div class="menu section">
             <ul>
                 <li><a href="#whoami">whoami</a></li>
@@ -58,38 +67,47 @@
             </ul>
         </div>
 
-        <p>Iraton@filipponotari.net:~$ <a class="command" id="whoami">cat whoami</a></p>
+        <p>
+            <span id="user">Iraton@filipponotari.net</span><span class="command">:</span><span id="dir">~/Documents</span><span
+                class="command">$ </span><a class="command" id="whoami">cat whoami.txt</a>
+        </p>
         <div class="whoami section">
-            <h2>Filippo Notari</h2>
-            <p>This is the content of my website.</p>
+            <span>Hi I am <strong>Filippo Notari</strong>,
+                also known as <strong>Iraton</strong>
+            I like to make stuff</span>
         </div>
 
-        <p>Iraton@filipponotari.net:~$ <a class="command" id="projects">cat projects</a></p>
-        <div class="projects section">
+        <p>
+            <span id="user">Iraton@filipponotari.net</span><span class="command">:</span><span id="dir">~/Documents</span><span
+                class="command">$ </span><a class="command" id="projects">tree ./projects/</a>
+        </p>
+        <span id="dir">./projects/</span>
+        <p class="projects section">
+            <span>
+                <a href="https://github.com/lraton/FlopperZiro">
+                    <strong>├── Flopper Ziro</strong>
+                </a><br>
+                <span><strong>│</strong>&nbsp;&nbsp;└── A Flipper Zero clone, but cheapest, DIY and simply Open Source, made with Arduino IDE </span>
+            </span><br><span>
+                <a href="https://github.com/lraton/TermostatoRettilario">
+                    <strong>├── Terrarium Thermostat</strong>
+                </a><br>
+                <span><strong>│</strong>&nbsp;&nbsp;└── A thermostat for terrarium made with arduino and 3d printed case </span>
+            </span><br><span>
+                <a href="https://github.com/lraton/DIYSim">
+                    <strong>└── DIY Simulator</strong>
+                </a><br>
+                <span><strong></strong>&nbsp;&nbsp;&nbsp;└── A direct drive simulator made with arduino leonardo </span>
+            </span>
+            
             <iframe src="https://github.com/sponsors/lraton/card" title="Sponsor lraton" class="github"></iframe>
-            <ul>
-                <li>
-                    <div class="projectscard">
-                        <a href="https://github.com/lraton/FlopperZiro"><h3>Flopper Ziro</h3></a>
-                        <p>A Flipper Zero clone, but cheapest, DIY and siply Open Source, made with Arduino IDE </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="projectscard">
-                        <a href="https://github.com/lraton/TermostatoRettilario"><h3>Terrarium Thermostat</h3></a>
-                        <p>A thermostat for terrarium made with arduino and 3d printed case </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="projectscard">
-                        <a href="https://github.com/lraton/DIYSim"><h3>DIY Simulator</h3></a>
-                        <p>A direct drive simulator made with arduino leonardo </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
 
-        <p>Iraton@filipponotari.net:~$ <a class="command" id="contact">cat contact</a></p>
+        </p>
+
+        <p>
+            <span id="user">Iraton@filipponotari.net</span><span class="command">:</span><span id="dir">~/Documents</span><span
+                class="command">$ </span><a class="command" id="contact">cat contact.txt</a>
+        </p>
         <div class="contact section">
             <ul>
                 <li>
@@ -113,7 +131,8 @@
                     <a href="https://github.com/lraton">GitHub</a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/filippo-notari-5b779a22b/"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/filippo-notari-5b779a22b/"><i
+                            class="fab fa-linkedin fa-2x"></i></a>
                     <a href="https://www.linkedin.com/in/filippo-notari-5b779a22b/">LinkedIn</a>
                 </li>
             </ul>
