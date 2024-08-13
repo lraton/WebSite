@@ -13,6 +13,10 @@ body {
     margin:5;
     list-style: none;
 }
+#content{
+    min-width: 82vmin;
+    min-height: 82vmin; 
+}
 
 ul{
     display: inline-block;
@@ -49,6 +53,7 @@ a{
     animation-duration: 1000ms;
     animation-fill-mode: forwards;
     animation-delay: 7500ms;
+
 }
 
 .delay1 {
