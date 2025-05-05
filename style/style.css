@@ -10,23 +10,24 @@ body {
     color: #23E298;
     font-size: 4vmin;
     line-height: 4.1vmin;
-    margin:5;
+    margin: 5;
     list-style: none;
 }
-#content{
+
+#content {
     min-width: 82vmin;
-    min-height: 82vmin; 
+    min-height: 82vmin;
 }
 
-ul{
+ul {
     display: inline-block;
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
 }
 
-/*Terminal boot*/ 
+/*Terminal boot*/
 .terminal {
     animation-name: fadeOut;
     animation-duration: 1ms;
@@ -47,6 +48,55 @@ a{
     animation-fill-mode: forwards;
 }
 
+/* Contenitore finestra con il bordo stile terminale */
+.window-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    /* Puoi anche usare una larghezza fissa, ad esempio 1200px */
+    max-width: 1200px;
+    height: auto;
+    /* Assicura che l'altezza si adatti al contenuto */
+    min-height: 500px;
+    /* Imposta una minima altezza, ma può essere adattata */
+}
+
+/* Header con i tre pallini */
+.window-header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px;
+    background-color: #333;
+    /* Colore di sfondo della parte superiore */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 3px solid #333;
+}
+
+/* Pallini in alto a sinistra */
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #ccc;
+    /* Colore di default */
+}
+
+.red {
+    background-color: #ff3b30;
+}
+
+.yellow {
+    background-color: #ffcc00;
+}
+
+.green {
+    background-color: #4cd964;
+}
+
 .page {
     opacity: 0;
     animation-name: fadeIn;
@@ -54,6 +104,16 @@ a{
     animation-fill-mode: forwards;
     animation-delay: 7500ms;
 
+    /* Posizionamento centrato */
+    border: 3px solid #333;
+    /* Bordo verde simile al terminale */
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: auto;
+    min-height: 500px;
+    /* Altezza minima per la pagina */
+    height: auto;
+    /* Adattamento dinamico */
 }
 
 .delay1 {
@@ -146,7 +206,8 @@ a{
         opacity: 0;
     }
 }
-.welcome{
+
+.welcome {
     text-align: left;
     color: #BBBBBB;
 }
@@ -158,18 +219,19 @@ a{
 }
 
 /*projects*/
-.github{
+.github {
     width: 600px;
     border: 0;
-    display:block;
+    display: block;
 }
+
 .projects {
     text-align: left;
     z-index: 1;
 }
 
-.section{
-    color:#BBBBBB;
+.section {
+    color: #BBBBBB;
 }
 
 /*command*/
@@ -177,16 +239,18 @@ a{
     color: #BBBBBB;
 }
 
-#user{
+#user {
     color: #23E298;
 }
-#dir{
+
+#dir {
     color: #D08010;
 }
 
 a:link {
     color: #BBBBBB;
 }
+
 a:visited {
     color: #BBBBBB;
 }
@@ -194,8 +258,11 @@ a:visited {
 /* BEGIN: Media Query for Phone */
 @media only screen and (min-width: 768px) {
     body {
-      font-size: 2.5vmin;
-      line-height: 2.6vmin; }
+        font-size: 2.5vmin;
+        line-height: 2.6vmin;
+    }
+
     #content {
-      min-width: 60vmin; } 
+        min-width: 60vmin;
+    }
 }
