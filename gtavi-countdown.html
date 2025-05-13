@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTA 6 Countdown – Time Left Until Release</title>
+    <meta name="description" content="Countdown to the official release of Grand Theft Auto VI (GTA 6). Stay up to date with the exact time left until launch!" />
+    <meta name="keywords" content="GTA 6, Grand Theft Auto 6, GTA VI, Rockstar Games, release countdown, game release date, GTA 6 launch timer" />
+    <meta name="author" content="Your Name or Site Name" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="GTA 6 Countdown – Time Left Until Release" />
+    <meta property="og:description" content="Live countdown to the release date of GTA 6. Track exactly how much time remains!" />
+    <meta property="og:image" content="https://iraton.it/img/thumbnail.webp" />
+    <meta property="og:url" content="https://iraton.it/gtavi-countdown" />
+    <meta property="og:type" content="website" />
+
+
+    <link rel="canonical" href="https://iraton.it/gtavi-countdown" />
+
+    <link rel="icon" href="icons/favicon.ico" />
+    <link rel="stylesheet" href="icons/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+    <div id="loader">
+        <div id="loaded"></div>
+     </div>
+     <div class="terminal">
+        <P class="delay1">GRAND</p>
+        <p class="delay2">THEFT</p>
+        <p class="delay3">AUTO</p>
+        <p class="delay4"><br></p>
+        <p class="delay5">VI</p>
+     </div>
+    <div class="window-container">
+        <div class="window-header">
+            <div class="circle red"></div>
+            <div class="circle yellow"></div>
+            <div class="circle green"></div>
+        </div>
+        <div class="page">
+            <div id="countdown">
+                <div class="time">
+                    <div class="number" id="days">0</div>
+                    <div class="label">Days</div>
+                </div>
+                <div class="time">
+                    <div class="number" id="hours">0</div>
+                    <div class="label">Hours</div>
+                </div>
+                <div class="time">
+                    <div class="number" id="minutes">0</div>
+                    <div class="label">Minutes</div>
+                </div>
+                <div class="time">
+                    <div class="number" id="seconds">0</div>
+                    <div class="label">Seconds</div>
+                </div>
+            </div>
+            <script>
+                const countdownDate = new Date("2026-05-26T01:00:00").getTime();
+
+                const updateCountdown = () => {
+                    const now = new Date().getTime();
+                    const distance = countdownDate - now;
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    document.getElementById("days").textContent = days;
+                    document.getElementById("hours").textContent = hours;
+                    document.getElementById("minutes").textContent = minutes;
+                    document.getElementById("seconds").textContent = seconds;
+                };
+
+                setInterval(updateCountdown, 1000);
+                updateCountdown();
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
